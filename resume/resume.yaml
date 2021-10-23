@@ -1,0 +1,159 @@
+basics:
+  name: Tom Haslam
+  label: Player 456
+  image: ''
+  email: haslam.tom@gmail.com
+  phone: "(912) 555-4321"
+  url: ''
+  summary: Richard Hendricks was the CEO and founder of Pied Piper as well as PiperNet, 
+    and is currently a Gavin Belson Professor of Ethics in Technology at Stanford. Before founding Pied Piper, Richard 
+    was an employee of Hooli. At work he was often an antagonist to the brogrammers. While at Hooli, Richard worked on 
+    the Pied Piper algorithm. However, even though Richard created one line of code on the algorithm on a Hooli laptop 
+    which would mean that Pied Piper would be property of Hooli, Richard's contract with Hooli was void due to a clause 
+    preventing him from leaving. Richard continued to work on Pied Piper until its demise, but still was involved with 
+    Pied Piper projects such as PiperChat and PiperNet until the company would be shut down in 2019.
+  location:
+    address: 3103 213th Place SE
+    postalCode: WA 98075
+    city: Samammish
+    countryCode: US
+    region: Kings County
+  profiles:
+  - network: ''
+    username: ''
+    url: ''
+  - network: ''
+    username: ''
+    url: ''
+work:
+- name: Pied Piper
+  location: Hartford, CT
+  description: Fortune 500 insurance company.
+  position: Lead Solutions Architect
+  url: http://piedpiper.example.com
+  startDate: '2021-08-23'
+  endDate: '2021-10-31'
+  summary: Pied Piper is a multi-platform technology based on a proprietary universal
+    compression algorithm that has consistently fielded high Weisman Scores™ that
+    are not merely competitive, but approach the theoretical limit of lossless compression.
+  highlights:
+  - Build an algorithm for artist to detect if their music was violating copy right
+    infringement laws
+  - Successfully won Techcrunch Disrupt
+  - Optimized an algorithm that holds the current world record for Weisman Scores
+- name: Caldors
+  location: New York, NY
+  description: Internet ecommerce company
+  position: Software Development Manager
+  url: http://www.amazon.com
+  startDate: '2017-05-01'
+  endDate: '2021-08-01'
+  summary: Pied Piper is a multi-platform technology based on a proprietary universal
+    compression algorithm that has consistently fielded high Weisman Scores™ that
+    are not merely competitive, but approach the theoretical limit of lossless compression.
+  highlights:
+  - Build an algorithm for artist to detect if their music was violating copy right
+    infringement laws
+  - Successfully won Techcrunch Disrupt
+  - Optimized an algorithm that holds the current world record for Weisman Scores
+- name: Dunkin Donuts
+  location: Hartford, CT
+  description: Mid-sized insurance company
+  position: Coffee Chef
+  url: http://www.selective.com
+  startDate: '2015-10-01'
+  endDate: '2017-05-01'
+  summary: Pied Piper is a multi-platform technology based on a proprietary universal
+    compression algorithm that has consistently fielded high Weisman Scores™ that
+    are not merely competitive, but approach the theoretical limit of lossless compression.
+  highlights:
+  - Build an algorithm for artist to detect if their music was violating copy right
+    infringement laws
+  - Successfully won Techcrunch Disrupt
+  - Optimized an algorithm that holds the current world record for Weisman Scores
+- name: ENRON
+  location: Hartford, CT
+  description: Forturn 500 insurance company
+  position: Lead Accountant
+  url: http://www.thehartford.com
+  startDate: '2010-05-01'
+  endDate: '2015-05-01'
+  summary: Pied Piper is a multi-platform technology based on a proprietary universal
+    compression algorithm that has consistently fielded high Weisman Scores™ that
+    are not merely competitive, but approach the theoretical limit of lossless compression.
+  highlights:
+  - Build an algorithm for artist to detect if their music was violating copy right
+    infringement laws
+  - Successfully won Techcrunch Disrupt
+  - Optimized an algorithm that holds the current world record for Weisman Scores
+volunteer:
+- organization: ''
+  position: ''
+  url: ''
+  startDate: '2011-06-01'
+  endDate: '2011-06-01'
+  summary: ''
+  highlights:
+  - ''
+education:
+- institution: Clown University
+  area: Information Technology
+  studyType: Bachelor
+  startDate: '2011-06-01'
+  endDate: '2014-01-01'
+  gpa: '4.0'
+  courses:
+  - ''
+- institution: Drunk University
+  area: Computer Science
+  studyType: Bachelor
+  startDate: '2011-06-01'
+  endDate: '2014-01-01'
+  gpa: '4.0'
+  courses:
+  - ''
+awards:
+- title: ''
+  date: '2011-06-01'
+  awarder: ''
+  summary: ''
+publications:
+- name: ''
+  publisher: ''
+  releaseDate: '2011-06-01'
+  url: ''
+  summary: ''
+skills:
+- name: ''
+  level: ''
+  keywords:
+  - ''
+languages:
+- language: English
+  fluency: Native speaker
+interests:
+- name: Video Games
+  keywords:
+  - Halo
+  - Fortnite
+references:
+- name: Bob Dylan
+  reference: ''
+projects:
+- name: ''
+  description: ''
+  highlights:
+  - ''
+  keywords:
+  - ''
+  startDate: '2011-06-01'
+  endDate: '2011-06-01'
+  url: ''
+  roles:
+  - ''
+  entity: ''
+  type: ''
+meta:
+  canonical: ''
+  version: ''
+  lastModified: ''

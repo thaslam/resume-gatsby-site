@@ -1,141 +1,98 @@
-import * as React from "react"
+/* 
+Referenced https://github.com/pcarion/resume-with-gatsby to build resume page with Yaml as datasoruce
+*/
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-}
+import React from 'react';
+import { graphql } from 'gatsby';
+import Resume from '../components/resume';
 
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
+const Page = ({ data }) => {
+  const resume = data.resumeData;
+  const clock = data.worldclockData;
+  return <Resume resume={resume} clock={clock} />;
+};
 
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
+export default Page;
 
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
-
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
-
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-}
-
-// data
-const links = [
-  {
-    text: "Clown",
-    url: "#",
-    badge: true,
-    description:
-      "2021",
-    color: "#333",
-  },
-  {
-    text: "Magician",
-    url: "#",
-    description:
-      "2019",
-    color: "#333",
-  },
-  {
-    text: "Amazonian",
-    url: "#",
-    description:
-      "2017",
-    color: "#333",
-  },
-]
-
-// markup
-const IndexPage = () => {
-  return (
-    <main style={pageStyles}>
-      <title>Resume</title>
-      <h1 style={headingStyles}>
-        Tom Haslam
-        <br />
-        <span style={headingAccentStyles}>Resume</span>
-      </h1>
-      <ul style={listStyles}>
-        {links.map(link => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-              >
-                {link.text}
-              </a>
-              {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
-                  NEW!
-                </span>
-              )}
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-    </main>
-  )
-}
-
-export default IndexPage
+export const query = graphql`
+  query MyQuery {
+    resumeData: resumeYaml {
+      basics {
+        email
+        name
+        label
+        phone
+        url
+        summary
+        profiles {
+          network
+          url
+          username
+        }
+      }
+      work {
+        description
+        endDate(formatString: "MMM, YYYY")
+        highlights
+        location
+        name
+        startDate(formatString: "MMM, YYYY")
+        position
+        summary
+        url
+      }
+      volunteer {
+        endDate(formatString: "MMM, YYYY")
+        highlights
+        organization
+        position
+        startDate(formatString: "MMM, YYYY")
+        summary
+        url
+      }
+      education {
+        area
+        courses
+        endDate(formatString: "MMM, YYYY")
+        gpa
+        institution
+        startDate(formatString: "MMM, YYYY")
+        studyType
+      }
+      awards {
+        awarder
+        date(formatString: "MMM, YYYY")
+        summary
+        title
+      }
+      publications {
+        name
+        publisher
+        releaseDate(formatString: "MMM, YYYY")
+        summary
+        url
+      }
+      skills {
+        keywords
+        level
+        name
+      }
+      languages {
+        fluency
+        language
+      }
+      interests {
+        keywords
+        name
+      }
+      references {
+        name
+        reference
+      }
+    }
+    worldclockData: example {
+      currentDateTime(formatString: "MMMM DD, YYYY")
+      currentFileTime
+    }
+  }
+`;

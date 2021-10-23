@@ -4,7 +4,6 @@ module.exports = {
     title: "resume-gatsby-site",
   },
   plugins: [
-    "gatsby-plugin-netlify-cms",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
     "gatsby-plugin-mdx",
@@ -26,5 +25,13 @@ module.exports = {
       },
       __key: "pages",
     },
+    "gatsby-transformer-yaml",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./resume`,
+      },
+    },
+    "gatsby-plugin-react-helmet",
   ],
 };
